@@ -1,5 +1,13 @@
 <p id="notice"><%= notice %></p>
 
+<% content_for(:pagetitle) do %>
+Meeting Details
+<% end %>
+
+<% content_for(:sidebar) do %>
+<%= @meeting.location.name %>
+<% end %>
+
 <p>
   <strong>Name:</strong>
   <%= @meeting.name %>

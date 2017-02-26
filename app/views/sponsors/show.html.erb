@@ -1,5 +1,13 @@
 <p id="notice"><%= notice %></p>
 
+<% content_for(:pagetitle) do %>
+Sponsor Details
+<% end %>
+
+<% content_for(:sidebar) do %>
+<%= render "sponsorEvents" %>
+<% end %>
+
 <p>
   <strong>Name:</strong>
   <%= @sponsor.name %>
